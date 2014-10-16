@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.qianfeng.acbtest.MainActivity" >
+
+    <item
+        android:id="@+id/action_search"
+        android:title="搜索"
+        android:icon="@drawable/ic_action_search"
+        android:showAsAction="always|collapseActionView"
+        android:actionViewClass="android.widget.SearchView"
+        />
+    
+    <item
+        android:id="@+id/action_accept"
+        android:title="接受"
+        android:icon="@drawable/ic_action_accept"
+        android:showAsAction="never|withText"
+        android:orderInCategory="102"
+        />
+    
+    <item
+        android:id="@+id/action_share"
+        android:title="分享"
+        android:orderInCategory="101"
+        android:showAsAction="never"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        />
+    
+    <item
+        android:id="@+id/action_refresh"
+        android:title="刷新"
+        android:orderInCategory="104"
+        android:icon="@drawable/ic_action_refresh"
+        android:showAsAction="never"
+        />
+    
+    
+    <!-- showAsAction 代表菜单需要放在 ActionBar 上面 -->
+    <!-- 并且指定显示的方式：显示在ActionBar上面还是在 Action Overflow里面，以及其他属性 -->
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

@@ -1,0 +1,56 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+   	
+   		<!-- 调整最右边的 Action Overflow 按钮图标 -->
+        <item name="android:actionOverflowButtonStyle">@style/MyOverflow</item>
+    
+    </style>
+    
+    <style name="ActionBarTheme" parent="AppTheme">
+        
+        <!-- 调整 ActionBar 主体的样式 -->
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+        
+        <!-- 调整 ActionBar 下面的那个  Tab bar 的样式 -->
+        <item name="android:actionBarTabBarStyle">@style/MyTabBarStyle</item>
+        
+    </style>
+    
+    <style name="MyActionBarStyle" parent="@android:style/Widget.ActionBar">
+        <item name="android:background">#F0F</item>
+        <item name="android:backgroundStacked">#F00</item> <!-- Tab -->
+        <item name="android:backgroundSplit">#0F0</item> <!-- Bottom 部分的颜色 -->
+    </style>
+    
+    <!-- 代表 Action Overflow 的样式 -->
+    <style name="MyOverflow" parent="@android:style/Widget.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_launcher</item>
+    </style>
+    
+    
+    <style name="MyTabBarStyle" parent="@android:style/Widget.ActionBar.TabBar">
+        <item name="android:background">#00F</item>
+    </style>
+    
+    <style name="MyTabStyle" parent="@android:style/Widget.ActionBar.TabView">
+        <item name="android:background">#00F</item>
+    </style>
+    
+    
+
+</resources>
